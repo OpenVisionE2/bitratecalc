@@ -193,8 +193,9 @@ static PyTypeObject eBitrateCalculatorPyType = {
 	PyObject_HEAD_INIT(NULL)
 	0, /*ob_size*/
 #if PY_MAJOR_VERSION < 3
-	sizeof(eBitrateCalculatorPy), /*tp_basicsize*/
+	"eBitrateImpl.eBitrateCalculator", /*tp_name*/
 #endif
+	sizeof(eBitrateCalculatorPy), /*tp_basicsize*/
 	0, /*tp_itemsize*/
 	(destructor)eBitrateCalculatorPy_dealloc, /*tp_dealloc*/
 	0, /*tp_print*/
